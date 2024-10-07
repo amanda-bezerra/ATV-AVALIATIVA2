@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Spinner para selecionar o filme -->
+    <Spinner
+        android:id="@+id/spinnerFilmes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Spinner para selecionar o horário -->
+    <Spinner
+        android:id="@+id/spinnerHorarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo para mostrar a quantidade de cadeiras selecionadas -->
+    <EditText
+        android:id="@+id/editQuantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFFFFF"/>
+
+    <!-- GridLayout para mostrar as cadeiras (2 filas e 10 colunas) -->
+    <GridLayout
+        android:id="@+id/gridCadeiras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="10"
+        android:layout_marginBottom="16dp">
+    </GridLayout>
+
+    <!-- Texto para exibir a cadeira selecionada -->
+    <TextView
+        android:id="@+id/selectedSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nenhuma cadeira selecionada"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"/>
+
+    <!-- Botão para confirmar compra com o degradê -->
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Compra"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:background="@drawable/button_gradient"/>
+</LinearLayout>
